@@ -1,0 +1,18 @@
+accessWidener v2 named
+
+accessible method net/minecraft/client/render/BufferBuilder beginVertex ()J
+accessible method net/minecraft/client/render/BufferBuilder putColor (JI)V
+accessible method net/minecraft/client/render/BufferBuilder putInt (JI)V
+accessible method net/minecraft/client/render/BufferBuilder floatToByte (F)B
+accessible field net/minecraft/client/render/BufferBuilder canSkipElementChecks Z
+accessible field net/minecraft/client/render/BufferBuilder hasOverlay Z
+accessible field net/minecraft/client/render/BufferBuilder allocator Lnet/minecraft/client/util/BufferAllocator;
+accessible field net/minecraft/client/render/BufferBuilder drawMode Lcom/mojang/blaze3d/vertex/VertexFormat$DrawMode;
+accessible field net/minecraft/client/render/BufferBuilder vertexFormat Lcom/mojang/blaze3d/vertex/VertexFormat;
+
+accessible field net/minecraft/client/render/RenderLayer$MultiPhase phases Lnet/minecraft/client/render/RenderLayer$MultiPhaseParameters;
+accessible field net/minecraft/client/render/RenderLayer$MultiPhase pipeline Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+accessible field net/minecraft/client/render/RenderLayer$MultiPhaseParameters texture Lnet/minecraft/client/render/RenderPhase$TextureBase;
+accessible field net/minecraft/client/render/RenderLayer$MultiPhaseParameters target Lnet/minecraft/client/render/RenderPhase$Target;
+accessible field net/minecraft/client/render/RenderLayer$MultiPhaseParameters outlineMode Lnet/minecraft/client/render/RenderLayer$OutlineMode;
+accessible field net/minecraft/client/render/RenderLayer$MultiPhaseParameters phases Lcom/google/common/collect/ImmutableList;

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "test28_update",
+  "version": "${version}",
+  "name": "Test28",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.dasdar.test28_update.Test28"
+    ]
+  },
+  "mixins": [
+    "test28_update.mixins.json"
+  ],
+  "accessWidener": "test28_update.accesswidener",
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
