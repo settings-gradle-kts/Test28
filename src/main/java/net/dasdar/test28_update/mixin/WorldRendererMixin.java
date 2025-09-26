@@ -20,7 +20,7 @@ public class WorldRendererMixin {
     @Shadow @Final private DefaultFramebufferSet framebufferSet;
 
     @Inject(method = "render", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/render/WorldRenderer;renderLateDebug(Lnet/minecraft/client/render/FrameGraphBuilder;Lnet/minecraft/util/math/Vec3d;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V", shift = At.Shift.BEFORE))
-    private void encode$renderWorld(ObjectAllocator allocator, RenderTickCounter tickCounter, boolean renderBlockOutline,
+    private void renderWorld(ObjectAllocator allocator, RenderTickCounter tickCounter, boolean renderBlockOutline,
                                     Camera camera, Matrix4f positionMatrix, Matrix4f projectionMatrix,
                                     GpuBufferSlice fog, Vector4f fogColor, boolean shouldRenderSky,
                                     CallbackInfo ci, @Local FrameGraphBuilder frameGraphBuilder) {

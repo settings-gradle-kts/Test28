@@ -1,4 +1,4 @@
-package net.dasdar.test28_update.translucent;
+package net.dasdar.test28_update;
 
 import net.minecraft.client.render.BlockRenderLayer;
 import net.minecraft.client.render.RenderLayer;

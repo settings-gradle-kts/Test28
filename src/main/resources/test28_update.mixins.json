@@ -4,8 +4,10 @@
   "package": "net.dasdar.test28_update.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "MultiPhaseMixin"
   ],
   "client": [
+    "GlCommandEncoderMixin",
     "WorldRendererMixin"
   ],
   "injectors": {
