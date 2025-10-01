@@ -14,6 +14,7 @@ public class SpecialRenderLayers {
 
     public static RenderLayer fromBlock(BlockRenderLayer blockRenderLayer) {
         return switch (blockRenderLayer) {
+            case SOLID -> RenderLayer.getSolid();
             case TRIPWIRE -> RenderLayer.getTripwire();
             case CUTOUT -> RenderLayer.getCutout();
             case CUTOUT_MIPPED -> RenderLayer.getCutoutMipped();
