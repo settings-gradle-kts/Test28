@@ -10,7 +10,7 @@ import static net.minecraft.client.render.RenderPhase.MIPMAP_BLOCK_ATLAS_TEXTURE
 public class SpecialRenderLayers {
     private SpecialRenderLayers() { }
 
-    private static final RenderLayer TRANSLUCENT = RenderLayer.of("translucent", 1536, true, true, RenderPipelines.TRANSLUCENT, RenderLayer.MultiPhaseParameters.builder().lightmap(ENABLE_LIGHTMAP).texture(MIPMAP_BLOCK_ATLAS_TEXTURE).build(true));
+    public static final RenderLayer TRANSLUCENT = RenderLayer.of("translucent", 786432, true, true, RenderPipelines.TRANSLUCENT, RenderLayer.MultiPhaseParameters.builder().lightmap(ENABLE_LIGHTMAP).texture(MIPMAP_BLOCK_ATLAS_TEXTURE).build(true));
 
     public static RenderLayer fromBlock(BlockRenderLayer blockRenderLayer) {
         return switch (blockRenderLayer) {

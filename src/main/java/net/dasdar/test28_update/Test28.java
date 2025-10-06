@@ -41,6 +41,7 @@ public class Test28 implements ClientModInitializer {
     public static BlendFunction blendFunction = null;
 
     public static boolean sodium = FabricLoader.getInstance().isModLoaded("sodium");
+    public static boolean iris = FabricLoader.getInstance().isModLoaded("iris");
 
     private static final List<QueuedBlock> renderBlocks = new ArrayList<>();
 
@@ -67,7 +68,7 @@ public class Test28 implements ClientModInitializer {
         MatrixStack matrices = rendererContext.matrixStack();
 
         if (!(rendererContext.consumers() instanceof VertexConsumerProvider.Immediate provider)) return;
-        colorModulator = new Vector4f(1.5f, .8f, .8f, .8f);
+        colorModulator = new Vector4f(.8f, .8f, 1.5f, iris ? 1 : .8f);
         blendFunction = BlendFunction.TRANSLUCENT;
 
         Vec3d cameraTranslation = MC.gameRenderer.getCamera().getCameraPos().negate();
